@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="avJ-R6-jEN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="avJ-R6-jEN">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -320,41 +320,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="OjY-lL-V24">
-                                <rect key="frame" x="86" y="213" width="135" height="278"/>
+                                <rect key="frame" x="86" y="213" width="151" height="278"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-YN-IBq">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="278"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="278"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-Ih-Zcz">
-                                                <rect key="frame" x="15" y="0.0" width="105" height="30"/>
+                                                <rect key="frame" x="23" y="0.0" width="105" height="30"/>
                                                 <state key="normal" title="Frida file check"/>
                                                 <connections>
                                                     <action selector="frida_file_check:" destination="x4H-Cl-EEH" eventType="touchUpInside" id="Mem-JQ-KYI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfZ-tL-j2U">
-                                                <rect key="frame" x="11" y="62" width="113" height="30"/>
+                                                <rect key="frame" x="19" y="62" width="113" height="30"/>
                                                 <state key="normal" title="Frida port check"/>
                                                 <connections>
                                                     <action selector="frida_port_check:" destination="x4H-Cl-EEH" eventType="touchUpInside" id="ELT-c6-cAL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztC-K9-V6d">
-                                                <rect key="frame" x="0.0" y="124" width="135" height="30"/>
+                                                <rect key="frame" x="8" y="124" width="135" height="30"/>
                                                 <state key="normal" title="Frida Module check"/>
                                                 <connections>
                                                     <action selector="frida_module_check:" destination="x4H-Cl-EEH" eventType="touchUpInside" id="0Bp-TJ-gHY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajh-Cn-Mhx">
-                                                <rect key="frame" x="6.5" y="186" width="122" height="30"/>
-                                                <state key="normal" title="Frida dylib loaded"/>
+                                                <rect key="frame" x="0.0" y="186" width="151" height="30"/>
+                                                <state key="normal" title="Frida check-bundle ID"/>
                                                 <connections>
-                                                    <action selector="frida_dylib_check:" destination="x4H-Cl-EEH" eventType="touchUpInside" id="Cvr-Pa-Lvd"/>
+                                                    <action selector="frida_check_bundle_id:" destination="x4H-Cl-EEH" eventType="touchUpInside" id="hNh-9x-q4b"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-w3-nCC">
-                                                <rect key="frame" x="20" y="248" width="95" height="30"/>
+                                                <rect key="frame" x="28" y="248" width="95" height="30"/>
                                                 <state key="normal" title="Frida Threads"/>
                                                 <connections>
                                                     <action selector="frida_trace_check:" destination="x4H-Cl-EEH" eventType="touchUpInside" id="YvW-F8-nGN"/>
@@ -507,9 +507,6 @@
         <image name="key" width="30" height="30"/>
         <image name="link" width="30" height="30"/>
         <image name="rocket" width="30" height="30"/>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

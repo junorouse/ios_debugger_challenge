@@ -40,7 +40,7 @@ typedef int (*funcptr)( void );
 @interface YDFridaDetection: NSObject
 +(BOOL)checkIfFridaInstalled;
 +(BOOL)checkDefaultPort;
-+(BOOL)checkLoadAddress;
++(BOOL)checkBundleId;
 +(BOOL)checkModules;
 +(BOOL)fridaNamedThreads;
 @end

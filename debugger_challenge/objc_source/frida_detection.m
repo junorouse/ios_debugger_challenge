@@ -99,20 +99,17 @@
     return NO;
 }
 
-#pragma mark: Check if any Frida strings return a Symbol pointer, at run-time */
-+(BOOL)checkLoadAddress{
-     
-    funcptr ptr = NULL;
+#pragma mark: Check app bundle-id is same as expected one. */
++(BOOL)checkBundleId{
 
-    for (int i=0; i<MAX_FRIDA_STRINGS; i++) {
-        NSLog(@"🐝Checking: %s", frida_strings[i]);
-        ptr = (funcptr)dlsym( RTLD_DEFAULT, frida_strings[i] );
-
-        if( ptr != NULL )
-            return YES;
+    NSString *str = NSBundle.mainBundle.infoDictionary[@"CFBundleIdentifier"];
+    NSString *expectedOne = @"io.dreamhack.frida.app";
+    NSLog(@"[!]🐝 bundle id: %@", str);
+    if ([str isEqualToString:expectedOne]) {
+        return NO;
     }
 
-    return NO;
+    return YES;
 }
 
 #pragma mark: Iterate through loaded Modules inside the app, at run-time. Goal: detect Frida-Gadget.dylib

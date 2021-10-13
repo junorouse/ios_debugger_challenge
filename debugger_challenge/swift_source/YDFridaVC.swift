@@ -28,9 +28,9 @@ class YDFridaVC: UIViewController {
         }
     }
     
-    @IBAction func frida_dylib_check(_ sender: Any) {
-        let result = YDFridaDetection.checkLoadAddress()
-        self.YDAlertController(user_message: feedback_string + " \(result)")
+    @IBAction func frida_check_bundle_id(_ sender: Any) {
+        let result = YDFridaDetection.checkBundleId()
+        self.YDAlertController(user_message: feedback_string + "(check bundle id) \(result)")
     }
     
     @IBAction func frida_module_check(_ sender: Any) {
