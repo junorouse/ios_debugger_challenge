@@ -30,8 +30,11 @@
 		30D4E6F12080725900ABE7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D4E6EF2080725900ABE7AA /* LaunchScreen.storyboard */; };
 		30D4E6FE208072CD00ABE7AA /* YDAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4E6FC208072CD00ABE7AA /* YDAlertHelper.swift */; };
 		30D4E6FF208072CD00ABE7AA /* YDTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4E6FD208072CD00ABE7AA /* YDTimeHelper.swift */; };
+		B865C4BF27169EC5006BFFB7 /* YDAliceSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5C081A725DE61D900E03BA4 /* YDAliceSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B865C4C127169ED3006BFFB7 /* FridaGadget.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B865C4C027169ED3006BFFB7 /* FridaGadget.dylib */; };
+		B865C4C327169EDA006BFFB7 /* FridaGadget.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B865C4C227169EDA006BFFB7 /* FridaGadget.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B865C4C527169F36006BFFB7 /* FridaGadget.config in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B865C4C427169F36006BFFB7 /* FridaGadget.config */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F5C081A925DE620200E03BA4 /* YDAliceSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C081A725DE61D900E03BA4 /* YDAliceSDK.xcframework */; };
-		F5C081AA25DE620200E03BA4 /* YDAliceSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5C081A725DE61D900E03BA4 /* YDAliceSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +44,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F5C081AA25DE620200E03BA4 /* YDAliceSDK.xcframework in Embed Frameworks */,
+				B865C4C527169F36006BFFB7 /* FridaGadget.config in Embed Frameworks */,
+				B865C4C327169EDA006BFFB7 /* FridaGadget.dylib in Embed Frameworks */,
+				B865C4BF27169EC5006BFFB7 /* YDAliceSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +87,9 @@
 		30D4E6F82080729800ABE7AA /* debugger_challenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "debugger_challenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		30D4E6FC208072CD00ABE7AA /* YDAlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDAlertHelper.swift; sourceTree = "<group>"; };
 		30D4E6FD208072CD00ABE7AA /* YDTimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTimeHelper.swift; sourceTree = "<group>"; };
+		B865C4C027169ED3006BFFB7 /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FridaGadget.dylib; sourceTree = "<group>"; };
+		B865C4C227169EDA006BFFB7 /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = FridaGadget.dylib; path = Frameworks/FridaGadget.dylib; sourceTree = "<group>"; };
+		B865C4C427169F36006BFFB7 /* FridaGadget.config */ = {isa = PBXFileReference; lastKnownFileType = text; name = FridaGadget.config; path = Frameworks/FridaGadget.config; sourceTree = "<group>"; };
 		F5C081A725DE61D900E03BA4 /* YDAliceSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = YDAliceSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B865C4C127169ED3006BFFB7 /* FridaGadget.dylib in Frameworks */,
 				F5C081A925DE620200E03BA4 /* YDAliceSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +156,8 @@
 		30D4E6DA2080725700ABE7AA = {
 			isa = PBXGroup;
 			children = (
+				B865C4C427169F36006BFFB7 /* FridaGadget.config */,
+				B865C4C227169EDA006BFFB7 /* FridaGadget.dylib */,
 				30D4E6E52080725700ABE7AA /* debugger_challenge */,
 				30D4BA082115E00600C31AE5 /* RNCryptor */,
 				F5C081A325DE619100E03BA4 /* Frameworks */,
@@ -180,6 +191,7 @@
 		F5C081A325DE619100E03BA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B865C4C027169ED3006BFFB7 /* FridaGadget.dylib */,
 				F5C081A725DE61D900E03BA4 /* YDAliceSDK.xcframework */,
 			);
 			path = Frameworks;
@@ -361,6 +373,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -416,6 +429,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -427,6 +441,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8MSEX235L;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -440,6 +455,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "funky-chicken.debugger-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -447,6 +466,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -471,12 +491,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "funky-chicken.debugger-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "debugger_challenge/debugger_challenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
